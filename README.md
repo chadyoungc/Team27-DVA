@@ -4,7 +4,7 @@
 3. Navigate to the directory where you want to set up this project.
 4. Run this command: `git clone https://github.com/jgajera/Team27-DVA.git`
 5. Change your directory to be inside the project folder.
-6. run `npm start` => if you face an error, run `npm install` and then `npm start`
+6. run `npm start` => if you face an error, run `npm install` and then `npm start` => if you see errors that npm isn't a recognized command, [install NPM](https://phoenixnap.com/kb/install-node-js-npm-on-windows).
 7. A new window should open to `http://localhost:3000/`, and you should be able to see the app.
 
 If you are still having problems, use Github Desktop. [Instructions on how to clone this repo to Github Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop)
