@@ -1,3 +1,14 @@
+# Getting this repo onto your computer
+1. Ensure you have git set up on your computer [instructions](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#prerequisites).
+2. Create a Personal Access Token to use Github through your command line [instructions](https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8).
+3. Navigate to the directory where you want to set up this project.
+4. Run this command: `git clone https://github.com/jgajera/Team27-DVA.git`
+5. Change your directory to be inside the project folder.
+6. run `npm start` => if you face an error, run `npm install` and then `npm start`
+7. A new window should open to `http://localhost:3000/`, and you should be able to see the app.
+
+If you are still having problems, use Github Desktop. [Instructions on how to clone this repo to Github Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
