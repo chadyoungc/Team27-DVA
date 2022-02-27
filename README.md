@@ -1,3 +1,14 @@
+# Getting this repo onto your computer
+1. Ensure you have git set up on your computer ([instructions](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#prerequisites)).
+2. Create a Personal Access Token to use Github through your command line ([instructions](https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8)). You'll need this to push to the repo.
+3. Navigate to the directory where you want to set up this project.
+4. Run this command: `git clone https://github.com/jgajera/Team27-DVA.git`
+5. Change your directory to be inside the project folder.
+6. run `npm start` => if you face an error, run `npm install` and then `npm start` => if you see errors that npm isn't a recognized command, [install NPM](https://phoenixnap.com/kb/install-node-js-npm-on-windows).
+7. A new window should open to `http://localhost:3000/`, and you should be able to see the app.
+
+If you are still having problems, use Github Desktop. [Instructions on how to clone this repo to Github Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,22 +55,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
