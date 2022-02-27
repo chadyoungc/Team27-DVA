@@ -1,6 +1,6 @@
 # Getting this repo onto your computer
 1. Ensure you have git set up on your computer ([instructions](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#prerequisites)).
-2. Create a Personal Access Token to use Github through your command line ([instructions](https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8)).
+2. Create a Personal Access Token to use Github through your command line ([instructions](https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8)). You'll need this to push to the repo.
 3. Navigate to the directory where you want to set up this project.
 4. Run this command: `git clone https://github.com/jgajera/Team27-DVA.git`
 5. Change your directory to be inside the project folder.
