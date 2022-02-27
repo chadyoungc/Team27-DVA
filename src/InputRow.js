@@ -15,16 +15,18 @@ Highcharts.setOptions({
         style: {
             fontFamily: "'Shippori Antique B1', sans-serif"
         }
-    }
+    },
+    colors: ['#3d5afe', '#76ff03', '#d500f9', '#1de9b6', '#ff3d00', '#3d5afe', '#00e676', '#FFF263', '#6AF9C4']
+
 });
 
 const options = {
     chart: {
         polar: true,
-        type: 'line'
+        type: 'area'
     },
-    credits:{
-        enabled:false,
+    credits: {
+        enabled: false,
     },
     title: {
         text: undefined,
@@ -32,7 +34,7 @@ const options = {
     pane: {
         size: '80%'
     },
-    legend:{
+    legend: {
         enabled: false,
     },
     xAxis: {
@@ -44,15 +46,23 @@ const options = {
     yAxis: {
         gridLineInterpolation: 'polygon',
         lineWidth: 0,
-        min: 0
+        min: 0,
+        labels: {
+            format: '{text}%'
+        },
     },
     tooltip: {
         shared: true,
         pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.2f}%</b><br/>'
     },
+    plotOptions: {
+        series: {
+            fillOpacity: 0.4
+        }
+    },
     series: [{
         name: '% Daily Value',
-        data: [.5, .39, .42, .31, .2, .14],
+        data: [50, 39, 42, 31, 60, 34],
         pointPlacement: 'on'
     }],
     responsive: {
@@ -67,11 +77,9 @@ const options = {
             }
         }]
     }
-
 }
-  
-HC_more(Highcharts);
 
+HC_more(Highcharts);
 
 const InputRow = (props) => {
     const [userRecipeInput, setUserRecipeInput] = useState("")
@@ -84,6 +92,7 @@ const InputRow = (props) => {
         <>
             <div className="filter-row">
                 <TextField
+                    fullWidth
                     label="Dish name"
                     variant="standard"
                     value={userRecipeInput}

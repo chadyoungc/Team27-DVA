@@ -24,7 +24,7 @@ const Header = (props) => {
             <header className="App-header">
                 <div className="flex-header">
                     <RestaurantMenuIcon color="secondary" />
-                    <h3 style={{ margin: "10px 5px" }}>OneRecipe</h3>
+                    <h4 style={{ margin: "10px 5px" }}>OneRecipe</h4>
                 </div>
                 <Button onClick={handleOpenModal} size="small" color="secondary" className="flush-right">
                     <HelpIcon fontSize="small" />

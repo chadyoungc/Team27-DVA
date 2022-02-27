@@ -46,3 +46,8 @@
     transform: rotate(360deg);
   }
 }
+
+.filter-row {
+  width: 50vw;
+  margin: 0 auto 50px auto;
+}
