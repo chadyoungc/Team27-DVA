@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import Header from './Header';
-import InputRow from './InputRow';
+import Header from './Components/Header';
+import InputRow from './Components/InputRow';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { purple } from '@mui/material/colors';
 
