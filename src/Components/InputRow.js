@@ -9,6 +9,7 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import HC_more from 'highcharts/highcharts-more';
+import { RecipeTable } from './RecipeTable'
 
 Highcharts.setOptions({
     chart: {
@@ -107,10 +108,14 @@ const InputRow = (props) => {
                 />
             </div>
 
-            <div className="">
+            {/* <div className="">
                 <p>User inputted: {userRecipeInput}</p>
                 <HighchartsReact highcharts={Highcharts} options={options} />
 
+            </div> */}
+
+            <div>
+                <RecipeTable />
             </div>
 
         </>
