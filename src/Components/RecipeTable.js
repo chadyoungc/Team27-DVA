@@ -68,35 +68,35 @@ export const RecipeTable = () => {
         // apply the table props
         <>
         <DataTable {...getTableProps()}>
-            <DataTableHead>
-                {headerGroups.map(headerGroup => (
-                    <DataTableRow {...headerGroup.getHeaderGroupProps()}>
-                        {headerGroup.headers.map(header => (
-                            <DataTableHeadCell {...header.getHeaderProps()}>
-                                {header.render('Header')}
-                            </DataTableHeadCell>
-                        ))}
-                    </DataTableRow>
-                ))}
-            </DataTableHead>
-            <DataTableBody>
-                <DataTableContent>
-                    {rows.map((row,i) => {
-                        prepareRow(row)
-                        return (
-                            <DataTableRow {...row.getRowProps()}>
-                                {row.cells.map(cell => {
-                                    return (
-                                        <DataTableCell {...cell.getCellProps()}>
-                                            {cell.render('Cell')}
-                                        </DataTableCell>
-                                    )
-                                })}
-                            </DataTableRow>
-                        )
-                    })}
-                </DataTableContent>
-            </DataTableBody>
+            <DataTableContent>
+                <DataTableHead>
+                    {headerGroups.map(headerGroup => (
+                        <DataTableRow {...headerGroup.getHeaderGroupProps()}>
+                            {headerGroup.headers.map(header => (
+                                <DataTableHeadCell {...header.getHeaderProps()}>
+                                    {header.render('Header')}
+                                </DataTableHeadCell>
+                            ))}
+                        </DataTableRow>
+                    ))}
+                </DataTableHead>
+                <DataTableBody>
+                        {rows.map((row,i) => {
+                            prepareRow(row)
+                            return (
+                                <DataTableRow {...row.getRowProps()}>
+                                    {row.cells.map(cell => {
+                                        return (
+                                            <DataTableCell {...cell.getCellProps()}>
+                                                {cell.render('Cell')}
+                                            </DataTableCell>
+                                        )
+                                    })}
+                                </DataTableRow>
+                            )
+                        })}
+                </DataTableBody>
+            </DataTableContent>
         </DataTable>
     </>
             
