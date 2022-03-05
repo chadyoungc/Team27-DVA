@@ -6,7 +6,7 @@ export function getRecipesByName(name){
             ingredients: [
                 {
                     ingredient: 'Flour',
-                    quantity: 1.5,
+                    quantity: 1.6,
                     unitOfMeasure: 'cup'
                 },
                 {
