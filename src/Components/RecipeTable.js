@@ -16,10 +16,13 @@ import '@material/data-table/dist/mdc.data-table.css'
 import '@rmwc/data-table/data-table.css'
 import '@rmwc/icon/icon.css'
 import { EditableCell } from './EditableCell'
+import { useRecipes, RecipesContext } from '../Hooks/recipesHook'
 
 
 export const RecipeTable = () => {
-    let recipes = getRecipesByName('cookies')
+
+    const {state:recipes, dispatch} = useRecipes()
+    
     const data = useMemo(
         () => {
             return aggregateRecipes(recipes)

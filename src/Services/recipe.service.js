@@ -2,7 +2,9 @@ export function getRecipesByName(name){
     return [
         {
             name : "Grandma's Famous Cookies",
+            id: 1,
             rating : 9.7,
+            included: true,
             ingredients: [
                 {
                     ingredient: 'Flour',
@@ -27,8 +29,10 @@ export function getRecipesByName(name){
             ],
         },
         {
-            name : "Simple Chocolate Chip Cookeis",
+            name : "Simple Chocolate Chip Cookies",
+            id: 2,
             rating : 7.5,
+            included: true,
             ingredients: [
                 {
                     ingredient: 'Flour',
@@ -56,11 +60,45 @@ export function getRecipesByName(name){
                     unitOfMeasure: 'cup'
                 },
             ],
+        },
+        {
+            name : "Best Chocolate Chip Cookies",
+            id: 3,
+            rating : 8,
+            included: true,
+            ingredients: [
+                {
+                    ingredient: 'Flour',
+                    quantity: 4,
+                    unitOfMeasure: 'cup'
+                },
+                {
+                    ingredient: 'Sugar',
+                    quantity: 1.5,
+                    unitOfMeasure: 'cup'
+                },
+                {
+                    ingredient: 'Eggs',
+                    quantity: 2,
+                    unitOfMeasure: 'large'
+                },
+                {
+                    ingredient: 'Chocolate Chips',
+                    quantity: 2.25,
+                    unitOfMeasure: 'cup'
+                },
+                {
+                    ingredient: 'Walnuts',
+                    quantity: 1,
+                    unitOfMeasure: 'cup'
+                },
+            ],
         }
     ]
 }
 
 export function aggregateRecipes(recipes) {
+    recipes = recipes.filter(r => r.included)
     let groupedIngredients = recipes.map(r => r.ingredients).flat().reduce((group, current) => {
         if(!(current.ingredient in group)){
             group[current.ingredient] = {

@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import * as React from 'react';
-import ReactDOM from 'react-dom';
 import './App.css';
 import Header from './Components/Header';
-import InputRow from './Components/InputRow';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { purple } from '@mui/material/colors';
+import { RecipesProvider } from './Hooks/recipesHook';
+import { Body } from './Components/Body'
+
 
 const theme = createTheme({
   palette: {
@@ -39,12 +38,15 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <Header />
-        <InputRow />
-      </div>
+      <RecipesProvider>
+        <div className="App">
+          <Header />
+          <Body />
+        </div>
+      </RecipesProvider>
     </ThemeProvider>
   );
 }
 
 export default App;
+
